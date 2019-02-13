@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPage"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </android.support.v4.view.ViewPager>
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/btu1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="首页"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/btu2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="其他"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/btu3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:text="我的"
+                android:background="@drawable/selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:background="#ff0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/ic_launcher"/>
+
+        <ListView
+            android:id="@+id/list_text"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="#00f">
+
+        </ListView>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
